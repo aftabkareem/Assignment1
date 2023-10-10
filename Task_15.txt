@@ -1,0 +1,19 @@
+Console.Write("Enter Number of Rows: ");
+int row_no= int.Parse(Console.ReadLine());
+
+int i, j,k, spacing_counter;
+spacing_counter = row_no-1;
+
+for (i = 1; i <= row_no ; i++)
+{
+    for (j=1; j <= spacing_counter ; j++) 
+    {
+        Console.Write(" ");
+    }
+    spacing_counter --;
+    for (k = 1; k <= i * 2 - 1; k++)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
+}

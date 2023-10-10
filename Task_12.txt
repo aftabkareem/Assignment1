@@ -1,0 +1,17 @@
+
+
+Console.Write("Enter a string: ");
+string name = Console.ReadLine();
+string reverse_string= string.Empty;
+for (int i = name.Length - 1 ; i>=0 ; i--)
+{
+    reverse_string += name[i];
+}
+if (reverse_string == name)
+{
+    Console.WriteLine(name + " is a palindrome. ");
+}
+else
+{
+    Console.WriteLine(name + " is not a palindrome. ");
+}

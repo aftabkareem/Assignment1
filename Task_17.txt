@@ -1,0 +1,21 @@
+int[] arr1 = new int[4] {7,3,44,5};
+
+int temp,i,j;
+
+for (j = 0; j < arr1.Length; j++)
+{
+    for (i = 0; i < arr1.Length - 1; i++)
+    {
+        if (arr1[i] > arr1[i + 1])
+        {
+            temp = arr1[i];
+            arr1[i] = arr1[i+1];
+            arr1[i+1] = temp;
+        }
+}
+}
+
+foreach (int item in arr1)
+{
+    Console.WriteLine(item);
+}
