@@ -1,0 +1,138 @@
+Section 1
+
+1. Console.WriteLine("Hello, World!");
+
+2.
+Console.Write("Enter your Name: "); // type your name and then press enter
+string name = Console.ReadLine();  // It's take user input and store it in a string variable
+
+Console.WriteLine("Hello, " + "[" + name +"]"); //printing the Greeting message
+
+
+3. 
+
+Console.Write("Enter the first Number: ");  //type the first number. It takes input as a string. 
+int num1 = Convert.ToInt32(Console.ReadLine()); // conversion of user string value to integer and then storing in the int variable num1.
+
+Console.Write("Enter the second Number: ");     // second number
+int num2 = Convert.ToInt32(Console.ReadLine()); // conversion and storing the integer value in int variable num2
+
+Console.WriteLine("sum is "+(num1 + num2)); // Addition of the user entered two numbers.
+
+
+
+4.
+
+Console.Write("Enter Number: ");  //type the number. It takes input as a string. 
+int number = Convert.ToInt32(Console.ReadLine()); // conversion of user string value to integer and than storing in the int variable named number
+
+
+
+Console.WriteLine("Square of the "+ number + " is " + (number*number)); //multiplication of number by itself gives square of that number
+
+----------------------or--------------------------
+
+Console.Write("Enter Number: ");  //type the number. It takes input as a string. 
+int number = Convert.ToInt32(Console.ReadLine()); // conversion of user string value to integer and than storing in the int variable named number
+
+
+
+Console.WriteLine("Square of the "+ number + " is " + Math.Pow(number,2)); //Math Power function to calculate the square of the number.
+
+
+5.
+for(int i=1; i<=100; i++)  
+{
+    if (i % 2 == 0)        //Even number are divisible by 2 and there reminder is always zero.
+    {
+        Console.WriteLine(i);  //printing of even number from 1 to 100.
+    }
+}
+
+
+
+-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+
+Section 2:
+
+1.
+
+Console.Write("Enter the number: ");                //Taking the number upto which sum will be calculated
+int number= Convert.ToInt32(Console.ReadLine());    //Conversion of string to int variable.
+int sum = 0;                                        //Initialization of sum variable.
+
+
+for(int i=1; i<=number; i++)                      //Loop will run from 1 to the user entered number
+{
+    sum += i;                                     //Everytime when loop run the value stored in sum variable.  
+}
+Console.WriteLine("Sum of numbers from 1 to " + number + " = " + sum); //Printing of final sum value.
+
+=========================================
+2.
+Console.Write("Enter the table_no: ");                //Enter the table number which you want to print
+int table_no= Convert.ToInt32(Console.ReadLine());    //Conversion of string to int variable.                                        //Initialization of sum variable.
+
+
+for(int i=1; i<=12; i++)                      //loop will run from 1 to 12 with increment of 1
+{
+    Console.WriteLine(table_no + " x " + i + " = " + (table_no * i));     //Displaying the user entered value table.         
+}
+
+
+=================================
+3.
+
+Console.Write("Enter the number: ");
+int number= Convert.ToInt32(Console.ReadLine());
+var prime_no = 1;
+for (int i = 2; i <= number; i++)
+{
+    for (int j = 2; j <= number; j++)
+    {
+        if (i != j && i % j == 0)
+        {
+            prime_no = 0;
+            break;
+        }
+    }
+    if (prime_no == 1)
+    {
+        Console.WriteLine(i);
+    }
+    prime_no = 1;
+}
+
+
+========================================
+
+4.
+
+Console.Write("Enter the number: ");
+int number= Convert.ToInt32(Console.ReadLine());
+var ans = 1;
+for(int i = number; i >= 1; i--)
+{
+    ans = ans* i;
+}
+
+Console.WriteLine(ans);
+
+
+5.
+
+int n1 = 0, n2 = 1, n3, i, number;
+Console.Write("Enter the number of elements: ");
+number = int.Parse(Console.ReadLine());
+Console.Write(n1 + " " + n2 + " "); //printing 0 and 1    
+for (i = 2; i < number; ++i) //loop starts from 2 because 0 and 1 are already printed    
+{
+    n3 = n1 + n2;
+    Console.Write(n3 + " ");
+    n1 = n2;
+    n2 = n3;
+}    
+      
+
+
